@@ -1,0 +1,12 @@
+x=1
+while(x!=0):
+    x=int(input())
+    if(x!=0):
+        y=0
+        z=0
+        while(z<5):
+            if(x%2==0):
+                y+=x
+                z+=1
+            x+=1
+        print(y)

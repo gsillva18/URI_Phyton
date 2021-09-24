@@ -1,0 +1,9 @@
+n=1
+media=0
+quant=0
+while(n>=0):
+    n=int(input())
+    if(n>=0):
+        media+=n
+        quant+=1
+print("{:.2f}".format(media/quant))

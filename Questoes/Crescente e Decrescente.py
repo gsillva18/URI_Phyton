@@ -1,0 +1,11 @@
+n=0
+while(n!=1):
+    x,y=input().split()
+    x=int(x)
+    y=int(y)
+    if(x==y):
+        n=1
+    elif(x>y):
+        print("Decrescente")
+    elif(x<y):
+        print("Crescente")

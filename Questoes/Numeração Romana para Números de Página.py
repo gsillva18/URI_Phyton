@@ -1,0 +1,44 @@
+val=int(input())
+lista=[]
+if(val>0 or val<=999):
+    a=val//900
+    b=(val%900)//500
+    c=((val%900)%500)//400
+    d=(((val%900)%500)%400)//100
+    e=((((val%900)%500)%400)%100)//90
+    e1=((((val%900)%500)%400)%100)%90
+    f=e1//50
+    g=(e1%50)//40
+    h=((e1%50)%40)//10
+    i=(((e1%50)%40)%10)//9
+    j=((((e1%50)%40)%10)%9)//5
+    j1=((((e1%50)%40)%10)%9)%5
+    k=j1//4
+    l=(j1%4)//1
+    if(a>0):
+        lista="CM"
+    if(b>0):
+        lista+="D"
+    if(c>0):
+        lista+="CD"
+    if(d>0):
+        lista+="C"*d
+    if(e>0):
+        lista+="XC"
+    if(f>0):
+        lista+="L"
+    if(g>0):
+        lista+="XL"
+    if(h>0):
+        lista+="X"*h
+    if(i>0):
+        lista+="IX"
+    if(j>0):
+        lista+="V"
+    if(k>0):
+        lista+="IV"
+    if(l>0):
+        lista+="I"*l
+
+    lista="".join(lista)
+    print(lista)
